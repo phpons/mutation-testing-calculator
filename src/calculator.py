@@ -3,7 +3,7 @@ def is_number(a):
 
 def validate_input(a, b):
     if not is_number(a) or not is_number(b):
-        raise ValueError('Input values must be numbers.')
+        raise ValueError("Input values must be numbers.")
 
 def sum(a, b):
     validate_input(a, b)
@@ -20,7 +20,7 @@ def mult(a, b):
 def div(a, b):
     validate_input(a, b)
     if b == 0:
-        raise ValueError('Can\'t divide by zero.')
+        raise ValueError("Can\'t divide by zero.")
     return a/b 
 
 #div(10, 'a')
